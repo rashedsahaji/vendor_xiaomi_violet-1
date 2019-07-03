@@ -17,8 +17,10 @@
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/xiaomi/violet/proprietary/bin/perfservice:system/bin/perfservice \
     vendor/xiaomi/violet/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/xiaomi/violet/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
+    vendor/xiaomi/violet/proprietary/etc/init/perfservice.rc:system/etc/init/perfservice.rc \
     vendor/xiaomi/violet/proprietary/etc/permissions/audiosphere.xml:system/etc/permissions/audiosphere.xml \
     vendor/xiaomi/violet/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/violet/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
@@ -61,6 +63,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/violet/proprietary/lib/fm_helium.so:system/lib/fm_helium.so \
     vendor/xiaomi/violet/proprietary/lib/libfm-hci.so:system/lib/libfm-hci.so \
+    vendor/xiaomi/violet/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
+    vendor/xiaomi/violet/proprietary/lib/libqti-iopd-client_system.so:system/lib/libqti-iopd-client_system.so \
+    vendor/xiaomi/violet/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
+    vendor/xiaomi/violet/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
+    vendor/xiaomi/violet/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
+    vendor/xiaomi/violet/proprietary/lib/vendor.qti.hardware.iop@1.0.so:system/lib/vendor.qti.hardware.iop@1.0.so \
+    vendor/xiaomi/violet/proprietary/lib/vendor.qti.hardware.iop@2.0.so:system/lib/vendor.qti.hardware.iop@2.0.so \
+    vendor/xiaomi/violet/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
     vendor/xiaomi/violet/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/violet/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/violet/proprietary/lib64/fm_helium.so:system/lib64/fm_helium.so \
@@ -78,7 +88,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/lib64/libfm-hci.so:system/lib64/libfm-hci.so \
     vendor/xiaomi/violet/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/xiaomi/violet/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
+    vendor/xiaomi/violet/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
+    vendor/xiaomi/violet/proprietary/lib64/libqti-iopd-client_system.so:system/lib64/libqti-iopd-client_system.so \
+    vendor/xiaomi/violet/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
+    vendor/xiaomi/violet/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
+    vendor/xiaomi/violet/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
     vendor/xiaomi/violet/proprietary/lib64/librcc.so:system/lib64/librcc.so \
+    vendor/xiaomi/violet/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:system/lib64/vendor.qti.hardware.iop@1.0.so \
+    vendor/xiaomi/violet/proprietary/lib64/vendor.qti.hardware.iop@2.0.so:system/lib64/vendor.qti.hardware.iop@2.0.so \
+    vendor/xiaomi/violet/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/lib64/vendor.qti.hardware.perf@1.0.so \
     vendor/xiaomi/violet/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/xiaomi/violet/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/xiaomi/violet/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
