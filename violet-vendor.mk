@@ -981,4 +981,6 @@ PRODUCT_PACKAGES += \
     FingerprintExtensionService \
     PowerOffAlarm \
     TimeService \
+    QPerformance \
+    UxPerformance \
     chargeonlymode
